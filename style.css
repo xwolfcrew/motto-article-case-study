@@ -208,7 +208,7 @@ video {
 
 .content-right-wrapper {
   position: relative;
-  width: 100%;
+  width: 80%;
 }
 
 .content-right-content {
@@ -614,6 +614,10 @@ footer {
     gap: 4rem;
   }
 
+  .content-right-wrapper {
+    width: 100%;
+  }
+
   .email-signup {
     padding-bottom: 2rem;
   }
@@ -662,6 +666,10 @@ footer {
     gap: 4rem;
   }
 
+  .content-right-wrapper {
+    width: 100%;
+  }
+
   .email-signup {
     padding-bottom: 2rem;
   }
@@ -702,12 +710,11 @@ footer {
   .footer-bottom {
     padding: 0;
   }
-  
+
   .footer-bottom-left {
     display: none;
   }
-  
-  
+
   .footer-bottom-center .social-icons .social-logo {
     width: 14px;
   }
