@@ -89,6 +89,11 @@ video {
   font-family: "PP Neue Montreal", sans-serif;
   font-size: clamp(12px, 1.3vw, 22px);
   font-weight: 500;
+  transition: color 500ms ease;
+}
+
+.nav-items .nav-item-content a:hover {
+  color: #616161;
 }
 
 .nav-right {
@@ -107,6 +112,19 @@ video {
 }
 
 .nav-right .nav-item-content::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1.3px;
+  background-color: black;
+  transform-origin: right center;
+  transition: width 500ms ease;
+  cursor: pointer;
+}
+
+.nav-right .nav-item-content:hover::before {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -383,6 +401,12 @@ video {
   color: black;
   border-bottom: 1px solid black;
   padding-bottom: 4px;
+  transition: color 500ms ease;
+  cursor: pointer;
+}
+
+.related-articles-top h3:hover {
+  color: #616161;
 }
 
 .related-articles-wrapper .related-articles-bottom {
@@ -405,6 +429,25 @@ video {
   flex-direction: column;
   aspect-ratio: 4 / 5;
   overflow: hidden;
+}
+
+.related-articles-bottom .card .image-container img {
+  transform: scale(1);
+  transition: transform 500ms ease;
+  will-change: transform;
+}
+
+.related-articles-bottom .card .image-container img:hover {
+  transform: scale(1.12) rotate(5deg);
+}
+
+.related-articles-bottom .card .image-container video {
+  transform: scale(1);
+  transition: transform 500ms ease;
+}
+
+.related-articles-bottom .card .image-container video:hover {
+  transform: scale(1.12) rotate(5deg);
 }
 
 .image-container .brand-container {
@@ -519,6 +562,12 @@ footer {
 
 .footer-column .column-content h3 {
   color: #939393;
+  transition: color 500ms ease 0.05s;
+  cursor: pointer;
+}
+
+.footer-column .column-content h3:hover {
+  color: #fff;
 }
 
 .footer-middle-right {
