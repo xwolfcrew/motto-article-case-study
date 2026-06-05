@@ -654,11 +654,18 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 4em 4em 0 4em;
+  }
+
+  .page-headline-wrapper h1 {
+    width: 100%;
   }
 
   .text-break-layout-wrapper {
     padding: 2rem 0;
+  }
+
+  .two-col-content {
+    padding: 3rem 4rem;
   }
 
   .two-col-content-wrapper {
@@ -693,11 +700,11 @@ footer {
   .footer-wrapper {
     align-items: center;
     justify-content: center;
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .footer-top {
-    padding-bottom: 1rem;
+    padding-bottom: 0;
     margin-bottom: 2rem;
     flex: 1;
   }
@@ -705,7 +712,7 @@ footer {
   .footer-middle {
     flex-direction: column;
     gap: 4rem;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
     flex: 1;
   }
 
@@ -715,7 +722,7 @@ footer {
   }
 
   .footer-bottom {
-    padding: 0;
+    padding: 1rem 0;
     flex: 1;
   }
 
